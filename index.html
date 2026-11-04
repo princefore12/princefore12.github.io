@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siby Mody — Portfolio Développeur Web Full-Stack | Licence 3 ITER</title>
+    <meta name="description" content="Portfolio de Siby Mody — Développeur Web Full-Stack (Django, Next.js, React, Firebase) et étudiant en Licence 3 Informatique (ITER) à Abidjan. 9 applications web en production, solutions Food-Tech & E-commerce.">
+    <meta name="author" content="Siby Mody">
+
+    <!-- Open Graph / WhatsApp / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://princefore12.github.io/">
+    <meta property="og:title" content="Siby Mody — Portfolio Développeur Web Full-Stack (L3 ITER)">
+    <meta property="og:description" content="Découvrez mes 9 applications web déployées en production (Food-Tech, E-commerce, Marketplace, PWA E-learning) et mes projets GitHub.">
+    <meta property="og:image" content="https://princefore12.github.io/images/photo.jpg">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Siby Mody — Portfolio Développeur Web Full-Stack">
+    <meta name="twitter:description" content="Étudiant en Licence 3 ITER à Abidjan · 9 applications web en production (Django, Next.js, React, Firebase).">
+    <meta name="twitter:image" content="https://princefore12.github.io/images/photo.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particules de fond -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>SM<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#a-propos" class="nav-link">À propos</a></li>
+                <li><a href="#food-tech" class="nav-link nav-link-foodtech"><i class="fas fa-utensils"></i> Food-Tech</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#formation" class="nav-link">Parcours</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://github.com/princefore12" target="_blank" rel="noopener noreferrer" class="nav-icon-btn" aria-label="Profil GitHub" title="Mon GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Changer le thème">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <div class="hero-badge animate-in">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Étudiant en Licence 3 — Informatique (ITER)</span>
+            </div>
+            <h1 class="hero-title animate-in">
+                <span class="greeting">Bonjour, je suis</span>
+                <span class="name">Siby <span class="accent">Mody</span></span>
+            </h1>
+            <p class="hero-subtitle animate-in">
+                Développeur Web Full-Stack passionné, créant des 
+                <span class="typed-text" id="typedText"></span>
+                <span class="cursor">|</span>
+            </p>
+            <div class="hero-cta animate-in">
+                <a href="#projets" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> Voir mes projets
+                </a>
+                <a href="CV_Siby_Mody.pdf" download class="btn btn-cv">
+                    <i class="fas fa-file-pdf"></i> Télécharger mon CV (PDF)
+                </a>
+                <a href="https://github.com/princefore12" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+            <div class="hero-stats animate-in">
+                <div class="stat">
+                    <span class="stat-number" data-count="9">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projets déployés</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="15">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Technologies maîtrisées</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="1">0</span>
+                    <span class="stat-label">Stage effectué</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual animate-in">
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="code-filename">siby_mody.py</span>
+                </div>
+                <pre class="code-body"><code><span class="kw">class</span> <span class="cls">DeveloppeurFullStack</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(<span class="var">self</span>):
+        <span class="var">self</span>.nom = <span class="str">"Siby Mody"</span>
+        <span class="var">self</span>.niveau = <span class="str">"Licence 3 ITER"</span>
+        <span class="var">self</span>.stack = [
+            <span class="str">"Python/Django"</span>, <span class="str">"Next.js/React"</span>,
+            <span class="str">"TypeScript"</span>, <span class="str">"Firebase"</span>, <span class="str">"JavaFX"</span>
+        ]
+        <span class="var">self</span>.projets_prod = <span class="bool">9</span>
+        <span class="var">self</span>.food_tech = <span class="bool">True</span>
+
+    <span class="kw">def</span> <span class="fn">objectif</span>(<span class="var">self</span>):
+        <span class="kw">return</span> <span class="str">"Digitaliser la restauration &amp; le commerce !"</span></code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section class="section" id="a-propos">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">01.</span> À propos de moi
+            </h2>
+            <div class="about-grid">
+                <div class="about-profile-col">
+                    <div class="about-photo-wrapper">
+                        <img src="images/photo.jpg" onerror="this.onerror=null;this.src='photo.jpg';" alt="Portrait de Siby Mody" class="about-photo">
+                        <div class="about-photo-badge">
+                            <i class="fas fa-check-circle"></i> Disponible — L3 ITER
+                        </div>
+                    </div>
+                    <div class="about-details">
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Abidjan, Côte d'Ivoire</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-university"></i>
+                            <span>UTT-LOKO — Licence 3 ITER</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Stage, Hackathon &amp; Freelance</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/princefore12" target="_blank" rel="noopener noreferrer">github.com/princefore12</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content-col">
+                    <div class="about-text">
+                        <p>
+                            Étudiant en <strong>3ème année de Licence en Informatique, Télécommunication, 
+                            Électronique et Réseaux (ITER)</strong> à l'Université Tertiaire et Technologique Loko (Abidjan), 
+                            je suis développeur web full-stack autodidacte et passionné par la création de solutions numériques concrètes.
+                        </p>
+                        <p>
+                            J'ai conçu et déployé <strong>9 applications web complètes en production</strong> pour des clients 
+                            en Côte d'Ivoire et au Sénégal : plateformes de commande en ligne pour la restauration, 
+                            marketplace multi-vendeurs, PWA d'e-learning, gestion scolaire et financière.
+                        </p>
+                        <p>
+                            Dans le domaine de la <strong>restauration et du commerce (Food-Tech)</strong>, j'ai développé 
+                            des systèmes complets intégrant menus digitaux interactifs, paniers, calcul de livraison par zone, 
+                            gestion des stocks, commande directe via WhatsApp et tableaux de bord analytiques (chiffre d'affaires, meilleures ventes).
+                        </p>
+                    </div>
+                    <div class="about-cards">
+                        <div class="info-card">
+                            <div class="info-card-icon"><i class="fas fa-code"></i></div>
+                            <div>
+                                <h3>Développement Web Full-Stack</h3>
+                                <p>Next.js 15, React 19, TypeScript, Django &amp; DRF, Firebase, Tailwind CSS, HTMX</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-card-icon"><i class="fas fa-utensils"></i></div>
+                            <div>
+                                <h3>Solutions Food-Tech &amp; E-Commerce</h3>
+                                <p>Commande en ligne, menu digital, zones de livraison, stock, intégration WhatsApp &amp; back-office</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-card-icon"><i class="fas fa-network-wired"></i></div>
+                            <div>
+                                <h3>Logiciel Desktop, Réseaux &amp; Systèmes</h3>
+                                <p>JavaFX (MVC, MySQL), Tkinter, TCP/IP, DNS/DHCP, Linux, Windows</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Food-Tech & Commerce -->
+    <section class="section section-foodtech" id="food-tech">
+        <div class="container">
+            <div class="foodtech-header">
+                <span class="foodtech-pill"><i class="fas fa-fire"></i> Spécialité &amp; Cas Concrets</span>
+                <h2 class="section-title">
+                    <span class="section-number">02.</span> Food-Tech &amp; Restauration Digitale
+                </h2>
+                <p class="section-subtitle">
+                    Des plateformes conçues pour les restaurateurs, pâtissiers et commerces : prise de commande fluide, 
+                    gestion de la livraison, suivi du stock et pilotage du chiffre d'affaires.
+                </p>
+            </div>
+
+            <div class="foodtech-grid">
+                <!-- Carte Food-Tech 1 : Les Secrets d'Allya -->
+                <article class="foodtech-card">
+                    <div class="foodtech-image">
+                        <span class="foodtech-tag"><i class="fas fa-store"></i> Client réel • Dakar, Sénégal</span>
+                        <img src="images/allya.jpg" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/800/crop/500/https://les-secret-d-allya-ashy.vercel.app/';" alt="Les Secrets d'Allya — E-commerce Pâtisserie & Crêperie" loading="lazy">
+                    </div>
+                    <div class="foodtech-body">
+                        <div class="foodtech-title-row">
+                            <h3>Les Secrets d'Allya 🥞</h3>
+                            <span class="foodtech-status">En production</span>
+                        </div>
+                        <p class="foodtech-pitch">
+                            Plateforme e-commerce complète de crêpes et pâtisseries artisanales à Dakar, 
+                            pensée comme une carte de restaurant digitale doublée d'un outil de gestion complet.
+                        </p>
+                        <ul class="foodtech-features">
+                            <li><i class="fas fa-check"></i> <strong>Catalogue façon menu :</strong> filtrage par catégories, visuels gourmands, panier &amp; favoris</li>
+                            <li><i class="fas fa-truck"></i> <strong>Livraison intelligente :</strong> sélection de la zone de livraison et calcul automatique des frais</li>
+                            <li><i class="fas fa-chart-line"></i> <strong>Back-office restaurateur :</strong> suivi du CA, top produits, gestion des stocks et statut des commandes</li>
+                            <li><i class="fas fa-star"></i> <strong>Relation client :</strong> système d'avis clients vérifiés avec modération et contact rapide</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Next.js 15</span><span>TypeScript</span><span>Tailwind CSS</span><span>Zustand</span><span>Django REST Framework</span><span>Vercel</span>
+                        </div>
+                        <div class="foodtech-actions">
+                            <a href="https://les-secret-d-allya-ashy.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-foodtech">
+                                <i class="fas fa-external-link-alt"></i> Explorer la plateforme
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Carte Food-Tech 2 : Soleil Délice -->
+                <article class="foodtech-card">
+                    <div class="foodtech-image">
+                        <span class="foodtech-tag"><i class="fas fa-utensils"></i> Restauration • Abidjan, CI</span>
+                        <img src="images/soleil-delice.jpg" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/800/crop/500/https://soleil-delice.onrender.com/';" alt="Soleil Délice — Site e-commerce de restauration" loading="lazy">
+                    </div>
+                    <div class="foodtech-body">
+                        <div class="foodtech-title-row">
+                            <h3>Soleil Délice 🍽️</h3>
+                            <span class="foodtech-status">En production</span>
+                        </div>
+                        <p class="foodtech-pitch">
+                            Application web de restauration permettant aux clients de composer leur repas en ligne 
+                            et de transmettre instantanément leur commande avec géolocalisation et suivi WhatsApp.
+                        </p>
+                        <ul class="foodtech-features">
+                            <li><i class="fas fa-check"></i> <strong>Menu &amp; Panier dynamique :</strong> sélection rapide des plats, boissons et accompagnements</li>
+                            <li><i class="fab fa-whatsapp"></i> <strong>Intégration WhatsApp :</strong> génération structurée du récapitulatif de commande pour traitement immédiat</li>
+                            <li><i class="fas fa-motorcycle"></i> <strong>Gestion des livraisons :</strong> prise en charge des coordonnées et zones de livraison locales (Petit-Bassam)</li>
+                            <li><i class="fas fa-cogs"></i> <strong>Administration Django :</strong> mise à jour simple du menu, des prix et de la disponibilité des plats</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Django</span><span>Python</span><span>CSS3</span><span>JavaScript</span><span>Render</span>
+                        </div>
+                        <div class="foodtech-actions">
+                            <a href="https://soleil-delice.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-foodtech">
+                                <i class="fas fa-external-link-alt"></i> Explorer la plateforme
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences -->
+    <section class="section section-alt" id="competences">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">03.</span> Compétences Techniques
+            </h2>
+            <p class="section-subtitle">Technologies mises en œuvre dans mes projets déployés et académiques</p>
+            <div class="skills-grid">
+                <!-- Langages -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Langages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-tag"><i class="fab fa-js-square"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fas fa-file-code"></i> TypeScript</span>
+                        <span class="skill-tag"><i class="fab fa-html5"></i> HTML5 / CSS3</span>
+                        <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+                        <span class="skill-tag"><i class="fas fa-terminal"></i> C / C++</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                    </div>
+                </div>
+
+                <!-- Front-end -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Front-end &amp; Mobile Web</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-react"></i> React 19</span>
+                        <span class="skill-tag"><i class="fas fa-bolt"></i> Next.js 15</span>
+                        <span class="skill-tag"><i class="fab fa-css3"></i> Tailwind CSS</span>
+                        <span class="skill-tag"><i class="fas fa-exchange-alt"></i> HTMX</span>
+                        <span class="skill-tag"><i class="fas fa-cubes"></i> Zustand</span>
+                        <span class="skill-tag"><i class="fas fa-mobile-alt"></i> PWA</span>
+                    </div>
+                </div>
+
+                <!-- Back-end & BDD -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Back-end &amp; Bases de données</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-python"></i> Django 5</span>
+                        <span class="skill-tag"><i class="fas fa-plug"></i> Django REST Framework</span>
+                        <span class="skill-tag"><i class="fas fa-fire"></i> Firebase (Auth, Firestore, Storage, FCM)</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SQLite</span>
+                    </div>
+                </div>
+
+                <!-- DevOps & Outils -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <h3>DevOps, Cloud &amp; Tests</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git &amp; GitHub</span>
+                        <span class="skill-tag"><i class="fas fa-cloud"></i> Render &amp; Vercel</span>
+                        <span class="skill-tag"><i class="fas fa-globe"></i> Firebase Hosting</span>
+                        <span class="skill-tag"><i class="fab fa-docker"></i> Docker (notions)</span>
+                        <span class="skill-tag"><i class="fas fa-images"></i> Cloudinary</span>
+                        <span class="skill-tag"><i class="fas fa-vial"></i> Tests (unittest, Playwright)</span>
+                    </div>
+                </div>
+
+                <!-- Desktop & Réseaux -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Desktop, Réseaux &amp; Systèmes</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-java"></i> JavaFX (MVC)</span>
+                        <span class="skill-tag"><i class="fas fa-window-maximize"></i> Tkinter</span>
+                        <span class="skill-tag"><i class="fas fa-network-wired"></i> TCP/IP, DNS, DHCP</span>
+                        <span class="skill-tag"><i class="fas fa-project-diagram"></i> Packet Tracer &amp; Wireshark</span>
+                        <span class="skill-tag"><i class="fab fa-linux"></i> Linux &amp; Windows</span>
+                    </div>
+                </div>
+
+                <!-- Langues & Bureautique -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-language"></i>
+                        <h3>Langues &amp; Bureautique</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag highlight"><i class="fas fa-star"></i> Français — Langue maternelle</span>
+                        <span class="skill-tag"><i class="fas fa-globe-africa"></i> Anglais — Intermédiaire (B1)</span>
+                        <span class="skill-tag"><i class="fas fa-file-excel"></i> Excel</span>
+                        <span class="skill-tag"><i class="fas fa-file-word"></i> Word</span>
+                        <span class="skill-tag"><i class="fas fa-file-powerpoint"></i> PowerPoint</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets -->
+    <section class="section" id="projets">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">04.</span> Applications Web Déployées
+            </h2>
+            <p class="section-subtitle">
+                En complément de mes plateformes Food-Tech (<a href="#food-tech" class="inline-link">Les Secrets d'Allya &amp; Soleil Délice</a>), 
+                voici mes 7 autres applications web en production :
+            </p>
+
+            <div class="projects-grid">
+                <!-- Projet Vedette : Soleil Market -->
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://soleil-market.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visiter Soleil Market">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <img src="images/soleil-market.jpg" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/800/crop/500/https://soleil-market.onrender.com/';" alt="Soleil Market" class="project-screenshot" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badge">Marketplace Multi-Vendeurs • Projet Phare</div>
+                        <h3>Soleil Market ☀️</h3>
+                        <p>
+                            Marketplace de matériel et de services IT avec 4 rôles (client, vendeur, technicien, admin), 
+                            espace étudiants UTT-LOKO, codes promo ciblés, programme de fidélité, notifications push FCM 
+                            et suite de 47 tests automatisés.
+                        </p>
+                        <div class="project-tech">
+                            <span>Django 5.2</span><span>Firestore</span><span>HTMX</span><span>Tailwind CSS</span><span>Cloudinary</span><span>FCM</span><span>Render</span>
+                        </div>
+                        <a href="https://soleil-market.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-visit">
+                            Visiter le site <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projet : KouakouMath+ -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://kouakoumath-d19f2.web.app/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visiter KouakouMath+">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <img src="images/kouakoumath.jpg" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/600/crop/380/https://kouakoumath-d19f2.web.app/';" alt="KouakouMath+" class="project-screenshot" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badge">PWA E-Learning</div>
+                        <h3>KouakouMath+ 📐</h3>
+                        <p>PWA d'apprentissage des mathématiques : inscription et validation des élèves par le professeur, cours structurés, exercices et corrigés déblocables.</p>
+                        <div class="project-tech">
+                            <span>React 19</span><span>Vite</span><span>Firebase Auth/Firestore/Storage</span><span>PWA</span>
+                        </div>
+                        <a href="https://kouakoumath-d19f2.web.app/" target="_blank" rel="noopener noreferrer" class="project-visit">
+                            Visiter le site <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projet : Al Madressah -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://almadressah.pythonanywhere.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visiter Al Madressah">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <img src="images/almadressah.jpg" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/600/crop/380/https://almadressah.pythonanywhere.com/';" alt="Al Madressah Assalafiyah" class="project-screenshot" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badge">Plateforme Scolaire</div>
+                        <h3>Al Madressah Assalafiyah</h3>
+                        <p>Plateforme scolaire complète : pré-inscription en ligne, espace parents, espace enseignants, dark mode, SEO optimisé et design responsive.</p>
+                        <div class="project-tech">
+                            <span>Django</span><span>Tailwind CSS</span><span>Python</span><span>PythonAnywhere</span>
+                        </div>
+                        <a href="https://almadressah.pythonanywhere.com/" target="_blank" rel="noopener noreferrer" class="project-visit">
+                            Visiter le site <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projet : InternaPay -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://internapay.pythonanywhere.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visiter InternaPay">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <img src="images/internapay.jpg" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/600/crop/380/https://internapay.pythonanywhere.com/';" alt="InternaPay" class="project-screenshot" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badge">Gestion Financière</div>
+                        <h3>InternaPay</h3>
+                        <p>Application de caisse d'internat : tableau de bord financier, suivi des paiements mensuels, gestion des dépenses et génération automatique de reçus.</p>
+                        <div class="project-tech">
+                            <span>Django</span><span>Python</span><span>SQLite</span><span>PythonAnywhere</span>
+                        </div>
+                        <div class="project-visit-group">
+                            <a href="https://internapay.pythonanywhere.com/" target="_blank" rel="noopener noreferrer" class="project-visit">
+                                Visiter le site <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="https://github.com/princefore12/INTERNAT-PAIEMENT" target="_blank" rel="noopener noreferrer" class="project-code-link" title="Voir le code sur GitHub">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet : UCF Truck Manager -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://ucf-truck-manager.web.app/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visiter UCF Truck Manager">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <img src="images/ucf-truck.jpg" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/600/crop/380/https://ucf-truck-manager.web.app/';" alt="UCF Truck Manager" class="project-screenshot" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badge">Gestion de Flotte</div>
+                        <h3>UCF Truck Manager</h3>
+                        <p>Application de gestion de flotte de camions avec authentification sécurisée, tableau de bord opérationnel et suivi des véhicules en temps réel.</p>
+                        <div class="project-tech">
+                            <span>Firebase</span><span>JavaScript</span><span>HTML/CSS</span>
+                        </div>
+                        <a href="https://ucf-truck-manager.web.app/" target="_blank" rel="noopener noreferrer" class="project-visit">
+                            Visiter le site <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projet : Rhecmaci Koweït -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://rhecmaci-koweit.web.app/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visiter Rhecmaci Koweït">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <img src="images/rhecmaci.jpg" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/600/crop/380/https://rhecmaci-koweit.web.app/';" alt="Rhecmaci Koweït" class="project-screenshot" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badge">Base de Données &amp; Recensement</div>
+                        <h3>Rhecmaci Koweït</h3>
+                        <p>Application de recensement en ligne avec formulaire d'inscription sécurisé, validation des données et stockage cloud Firebase.</p>
+                        <div class="project-tech">
+                            <span>Firebase</span><span>JavaScript</span><span>HTML/CSS</span>
+                        </div>
+                        <a href="https://rhecmaci-koweit.web.app/" target="_blank" rel="noopener noreferrer" class="project-visit">
+                            Visiter le site <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projet : Flambeaux-Lumières -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://flambeaux-lumieres.lovable.app/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visiter Flambeaux-Lumières">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <img src="images/flambeaux.jpg" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/600/crop/380/https://flambeaux-lumieres.lovable.app/';" alt="Flambeaux-Lumières" class="project-screenshot" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badge">Gestion Associative</div>
+                        <h3>Flambeaux-Lumières</h3>
+                        <p>Plateforme de gestion et communication de troupe scoute : suivi des membres et patrouilles, galerie photos, formations et actualités.</p>
+                        <div class="project-tech">
+                            <span>React</span><span>TypeScript</span><span>Tailwind CSS</span>
+                        </div>
+                        <div class="project-visit-group">
+                            <a href="https://flambeaux-lumieres.lovable.app/" target="_blank" rel="noopener noreferrer" class="project-visit">
+                                Visiter le site <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="https://github.com/princefore12/flambeaux_lumiere" target="_blank" rel="noopener noreferrer" class="project-code-link" title="Voir le code sur GitHub">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sous-section : Projets Académiques & GitHub -->
+            <div class="github-subsection">
+                <div class="github-subsection-header">
+                    <div>
+                        <h3 class="github-subsection-title"><i class="fab fa-github"></i> Projets Académiques &amp; Open Source</h3>
+                        <p class="github-subsection-subtitle">Applications desktop et systèmes académiques réalisés dans le cadre de la Licence ITER</p>
+                    </div>
+                    <a href="https://github.com/princefore12?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                        <i class="fab fa-github"></i> Voir tout mon GitHub
+                    </a>
+                </div>
+
+                <div class="github-cards-grid">
+                    <!-- GitHub 1 : Covoiturage JavaFX -->
+                    <a href="https://github.com/princefore12/Gestion-d-une-Plateforme-de-Covoiturage" target="_blank" rel="noopener noreferrer" class="github-card">
+                        <div class="github-card-top">
+                            <div class="github-card-icon"><i class="fas fa-car-side"></i></div>
+                            <i class="fas fa-external-link-alt github-ext"></i>
+                        </div>
+                        <h4>Plateforme de Covoiturage</h4>
+                        <p>Application desktop Java complète avec interface graphique JavaFX, architecture MVC stricte et base de données MySQL.</p>
+                        <div class="project-tech">
+                            <span>Java</span><span>JavaFX</span><span>MVC</span><span>MySQL</span>
+                        </div>
+                    </a>
+
+                    <!-- GitHub 2 : Évaluation des enseignements -->
+                    <a href="https://github.com/princefore12/systeme_d_evaluation_des_professeurs" target="_blank" rel="noopener noreferrer" class="github-card">
+                        <div class="github-card-top">
+                            <div class="github-card-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                            <i class="fas fa-external-link-alt github-ext"></i>
+                        </div>
+                        <h4>Système d'Évaluation des Enseignements</h4>
+                        <p>Application web sécurisée conçue pour le département ITER de l'UTT-LOKO permettant l'évaluation des cours de la Licence 1 au Master 2.</p>
+                        <div class="project-tech">
+                            <span>HTML/CSS</span><span>JavaScript</span><span>UTT-LOKO</span><span>L1 → M2</span>
+                        </div>
+                    </a>
+
+                    <!-- GitHub 3 : Caisse de pharmacie -->
+                    <a href="https://github.com/princefore12/gestion_commerce" target="_blank" rel="noopener noreferrer" class="github-card">
+                        <div class="github-card-top">
+                            <div class="github-card-icon"><i class="fas fa-cash-register"></i></div>
+                            <i class="fas fa-external-link-alt github-ext"></i>
+                        </div>
+                        <h4>Caisse de Pharmacie &amp; Commerce</h4>
+                        <p>MVP fonctionnel de gestion de caisse, panier d'encaissement et suivi des produits en pharmacie avec interface graphique Tkinter.</p>
+                        <div class="project-tech">
+                            <span>Python</span><span>Tkinter</span><span>Desktop</span><span>POS</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formation & Expérience -->
+    <section class="section section-alt" id="formation">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">05.</span> Formation &amp; Expérience
+            </h2>
+            <div class="timeline-grid">
+                <!-- Formation -->
+                <div class="timeline-column">
+                    <h3 class="timeline-heading"><i class="fas fa-graduation-cap"></i> Formation</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot current"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2024 — Présent (L3 en cours)</span>
+                                <h4>Licence en Informatique, Télécommunication, Électronique et Réseaux (ITER)</h4>
+                                <p class="timeline-place">Université Tertiaire et Technologique Loko (UTT-LOKO) — Abidjan</p>
+                                <p><strong>3ème année de Licence en cours.</strong> Cours &amp; travaux : Programmation (Python, Java, C++, JavaScript, HTML/CSS), Architecture des Ordinateurs, Réseaux Informatiques, Électronique Numérique, Système d'évaluation des enseignements.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2024</span>
+                                <h4>Baccalauréat Scientifique</h4>
+                                <p class="timeline-place">Lycée Moderne de Port-Bouet — Abidjan</p>
+                                <p>Diplôme obtenu en 2024.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expérience -->
+                <div class="timeline-column">
+                    <h3 class="timeline-heading"><i class="fas fa-briefcase"></i> Expérience Professionnelle</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot current"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2024 — Présent</span>
+                                <h4>Développeur Web Full-Stack Freelance</h4>
+                                <p class="timeline-place">Clients en Côte d'Ivoire &amp; au Sénégal</p>
+                                <p>Conception, développement et déploiement de <strong>9 applications web</strong> en production : Les Secrets d'Allya (artisane pâtissière, Dakar), KouakouMath+ (professeur de mathématiques), Soleil Market (marketplace IT), Soleil Délice (restauration), Al Madressah (établissement scolaire), InternaPay, etc.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Sep — Oct 2024</span>
+                                <h4>Stage — Direction des Services Techniques et des Moyens Généraux</h4>
+                                <p class="timeline-place">Stage d'un mois — Abidjan</p>
+                                <p>Assistance informatique, maintenance matérielle/logicielle et résolution de problèmes techniques au sein d'une administration.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">06.</span> Me Contacter
+            </h2>
+            <p class="section-subtitle">
+                Disponible pour des projets, stages, hackathons ou missions freelance. 
+                N'hésitez pas à me contacter !
+            </p>
+            <div class="contact-grid">
+                <a href="mailto:sibymody19@gmail.com" class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>sibymody19@gmail.com</p>
+                </a>
+                <a href="tel:+2250720788794" class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <h3>Téléphone</h3>
+                    <p>+225 07 20 78 87 94</p>
+                </a>
+                <a href="https://wa.me/2250720788794" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                    <h3>WhatsApp</h3>
+                    <p>Discuter directement</p>
+                </a>
+                <a href="https://github.com/princefore12" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <h3>GitHub</h3>
+                    <p>github.com/princefore12</p>
+                </a>
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Localisation</h3>
+                    <p>Abidjan, Côte d'Ivoire</p>
+                </div>
+            </div>
+            <div class="contact-cta">
+                <a href="mailto:sibymody19@gmail.com" class="btn btn-primary btn-lg">
+                    <i class="fas fa-paper-plane"></i> Envoyer un email
+                </a>
+                <a href="CV_Siby_Mody.pdf" download class="btn btn-outline btn-lg">
+                    <i class="fas fa-file-pdf"></i> Télécharger mon CV (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-brand">
+                    <span class="logo-bracket">&lt;</span>Siby Mody<span class="logo-bracket">/&gt;</span>
+                </p>
+                <p class="footer-text">Développeur Web Full-Stack · Licence 3 ITER (UTT-LOKO)</p>
+                <p class="footer-copy">&copy; 2026 Siby Mody — Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

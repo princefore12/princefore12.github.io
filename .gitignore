@@ -1,0 +1,11 @@
+# Fichiers locaux de génération et brouillons CV
+.venv/
+__pycache__/
+*.py
+*.docx
+*.md
+CV_Siby_Mody_Print.html
+/photo.jpg
+{*.png
+thumbs.db
+.DS_Store
